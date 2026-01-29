@@ -11,7 +11,7 @@ Observation:
 Confirmed Linux kernel version and Ubuntu distribution
 Ensured OS compatibility for systemd and nginx
 
-![Environment Basics](images/env_basics.jpg)
+![Environment Basics](images/env_basics.png)
 
 **2. Process & CPU / Memory Snapshot**
 
@@ -26,7 +26,7 @@ nginx master and worker processes running
 CPU usage stable, no abnormal spikes
 Memory utilization within safe limits
 
-![Process](images/2.jpg)
+![Process](images/2.png)
 
 **3. Disks & I/O checks**
 
@@ -39,9 +39,9 @@ Root filesystem has sufficient free space
 Log directory size under control
 
 
-![Disk](images/3.jpg)
+![Disk](images/3.png)
 
-![I/O](images/31.jpg)
+![I/O](images/31.png)
 
 **4. Network**
 
@@ -53,9 +53,9 @@ Observation:
 nginx listening on port 80
 HTTP 200 response confirms service availability
 
-![sstulpn](images/4.jpg)
+![sstulpn](images/4.png)
 
-![curl](images/41.jpg)
+![curl](images/41.png)
 
 **5. Log Inspection**
 
@@ -66,9 +66,9 @@ Observation:
 No recent errors or warnings
 Service started cleanly without crashes
 
-![tail](images/5.jpg)
+![tail](images/5.png)
 
-![journalctl](images/51.jpg)
+![journalctl](images/51.png)
 
 
 **Key Findings**
