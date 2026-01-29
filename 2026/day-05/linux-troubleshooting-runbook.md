@@ -1,6 +1,6 @@
 # Day 05 – Linux Troubleshooting Drill: CPU, Memory, and Logs
 
-Tagret service: Nginx
+### Tagret service: Nginx
 
 **1. Environment Basics**
 
