@@ -29,18 +29,19 @@
 ![practice](images/download-to-local-using-ec2.png)
 
 ### Commands Used
-cat /var/log/nginx/access.log
-cat /var/log/nginx/access.log | tee -a nginx-logs.txt
-cat /var/log/nginx/error.log
-docker run hello-world
-journalctl -u nginx
-ss -tuln
-sudo apt install nginx
-sudo apt update
-sudo apt upgrade
-systemctl status docker
-systemctl status nginx
-systemctl status nginx
+- cat /var/log/nginx/access.log
+- cat /var/log/nginx/access.log | tee -a nginx-logs.txt
+- cat /var/log/nginx/error.log
+- docker run hello-world
+- journalctl -u nginx
+- ss -tuln
+- sudo apt install nginx
+- sudo apt update
+- sudo apt upgrade
+- systemctl status docker
+- systemctl status nginx
+- systemctl status nginx
+- scp -i your-key.pem ubuntu@<your-instance-ip>:~/nginx-logs.txt .
 
 ### What I Learned
 - How to install Docker
