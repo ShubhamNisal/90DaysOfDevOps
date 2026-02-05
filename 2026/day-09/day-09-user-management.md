@@ -1,6 +1,6 @@
 # Day 09 – Linux User & Group Management Challenge
 
-### Task 1: Create Users (20 minutes)
+### Task 1: Create Users
 
 Create three users with home directories and passwords:
 - `tokyo`
@@ -17,7 +17,7 @@ Create three users with home directories and passwords:
 
 ---
 
-### Task 2: Create Groups (10 minutes)
+### Task 2: Create Groups
 
 Create two groups:
 - `developers`
@@ -30,7 +30,7 @@ Create two groups:
 
 ---
 
-### Task 3: Assign to Groups (15 minutes)
+### Task 3: Assign to Groups
 
 Assign users:
 - `tokyo` → `developers`
@@ -45,7 +45,7 @@ Assign users:
 
 ---
 
-### Task 4: Shared Directory (20 minutes)
+### Task 4: Shared Directory
 
 1. Create directory: `/opt/dev-project`
 2. Set group owner to `developers`
@@ -61,7 +61,7 @@ Assign users:
 
 ---
 
-### Task 5: Team Workspace (20 minutes)
+### Task 5: Team Workspace
 
 1. Create user `nairobi` with home directory
 2. Create group `project-team`
