@@ -24,6 +24,7 @@ Create two groups:
 - `admins`
 
 **Verify:** Check `/etc/group`
+
 ![practice](images/16.png)
 ![practice](images/17.png)
 
