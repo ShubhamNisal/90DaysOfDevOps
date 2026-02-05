@@ -1,4 +1,4 @@
-# Day 09 Challenge
+# Day 09 – Linux User & Group Management Challenge
 
 ### Task 1: Create Users (20 minutes)
 
