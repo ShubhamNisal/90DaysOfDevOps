@@ -86,6 +86,12 @@ mkdir /tmp/devops-test || echo "Directory already exists"
 
 ---
 
+### What I learned (key points)
+- For loop, while loop, if-elif-else
+- Pass arguments in scripts
+- Error handling using set -e & ||
+- Installing multiple packages using shell script
+
 ## Hints
 - For loop: `for item in list; do ... done`
 - While loop: `while [ condition ]; do ... done`
