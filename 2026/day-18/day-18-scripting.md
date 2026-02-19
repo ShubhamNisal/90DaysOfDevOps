@@ -106,6 +106,7 @@ Output should look clean and readable.
 ---
 
 ### What I learned
-- 
-- 
-- 
+- Making reusable & modular scripts using functions
+- How to build a System Info Reporter script
+- local variables
+- set -euo pipefail to handle errors within a script
