@@ -1,0 +1,22 @@
+Log Analysis Report
+===============================
+Date of Analysis: 2026-03-07
+Log File: /home/ubuntu/logs/err_logs.txt
+Total Lines Processed: 50
+Total Error Count: 11
+
+--- Top 5 Error Messages ---
+      1    Segmentation fault - 22975
+      1    Segmentation fault - 20778
+      1    Out of memory - 28346
+      1    Out of memory - 10445
+      1    Invalid input - 12164
+
+--- Critical Events ---
+11:2026-03-07 10:31:37 [CRITICAL]  - 3554
+39:2026-03-07 10:31:37 [CRITICAL]  - 759
+43:2026-03-07 10:31:37 [CRITICAL]  - 3789
+44:2026-03-07 10:31:37 [CRITICAL]  - 8764
+45:2026-03-07 10:31:37 [CRITICAL]  - 21606
+46:2026-03-07 10:31:37 [CRITICAL]  - 835
+48:2026-03-07 10:31:37 [CRITICAL]  - 6845
