@@ -29,7 +29,7 @@ automation, and system administration.
 | Integer Compare     | `[ $a -gt $b ]`                       | Compare numbers                                            |
 | File Check          | `[ -f file ]` / `[ -d dir ]`          | Check file or directory                                    |
 | Logical AND         | `cmd1 && cmd2`                        | Run cmd2 if cmd1 succeeds                                  |
-| Logical OR          | `cmd1 || cmd2`                        | Run cmd2 if cmd1 fails                                     |
+| Logical OR          |  `cmd1 || cmd2`                       | Run cmd2 if cmd1 fails                                     |
 | Case Statement      | `case ... esac`                       | Multiple condition branching                               |
 | For Loop            | `for i in list; do ... done`          | Iterate over items                                         |
 | C-style Loop        | `for ((i=0;i<n;i++))`                 | Numeric iteration                                          |
