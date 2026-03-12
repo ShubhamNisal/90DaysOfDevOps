@@ -39,6 +39,47 @@ In your `devops-git-practice` repo, perform the following:
 3. Switch to `feature-1`
 4. Create a new branch and switch to it in a single command — call it `feature-2`
 5. Try using `git switch` to move between branches — how is it different from `git checkout`?
+```
+-------------
+git checkout
+-------------
+git checkout is an older, multi-purpose command.
+It can be used for several things, which sometimes makes it confusing.
+
+It can:
+Switch branches
+Restore files
+Move to a specific commit
+
+Examples:
+
+Switch branch
+git checkout feature-1
+
+Create and switch branch
+git checkout -b feature-2
+
+Restore a file
+git checkout file.txt
+
+Checkout a commit
+git checkout <commit-id>
+
+------------
+git switch  
+------------
+
+git switch is a newer command introduced to simplify branch operations.
+It is only used for switching branches, making it safer and clearer.
+
+Examples:
+
+Switch branch
+git switch feature-1
+
+Create and switch branch
+git switch -c feature-2
+```
 6. Make a commit on `feature-1` that does **not** exist on `main`
 7. Switch back to `main` — verify that the commit from `feature-1` is not there
 8. Delete a branch you no longer need
