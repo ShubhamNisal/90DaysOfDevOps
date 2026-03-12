@@ -77,7 +77,7 @@ git add .
 
 
 ### Day 23
-
+```
 git branch
 git branch -d feature-2
 git branch feature-1
@@ -93,5 +93,6 @@ git remote add origin https://github.com/ShubhamNisal/devops-git-practice.git
 git remote -v
 git push -u origin main
 git push -u origin master
+```
 git push -u origin feature-1
 git pull
