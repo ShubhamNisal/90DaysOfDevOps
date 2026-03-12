@@ -75,3 +75,23 @@ Stages all changed files.
 Example:
 git add .
 
+
+### Day 23
+
+git branch
+git branch -d feature-2
+git branch feature-1
+git checkout -b feature-2
+git checkout feature-1
+git commit -m "Added new file: file1.txt"
+git log
+git log --oneline
+git switch feature-1
+git switch main
+git switch master
+git remote add origin https://github.com/ShubhamNisal/devops-git-practice.git
+git remote -v
+git push -u origin main
+git push -u origin master
+git push -u origin feature-1
+git pull
