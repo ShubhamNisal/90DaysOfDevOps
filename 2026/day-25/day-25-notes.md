@@ -8,18 +8,21 @@
 
 
 2. Use `git reset --soft` to go back one commit — what happens to the changes?    
+
 ![practice](images/12.png)    
 
 - Commit C is removed    
 - Changes from C are still staged     
 
 3. Re-commit, then use `git reset --mixed` to go back one commit — what happens now?    
+
 ![practice](images/13.png)    
 
 - Commit C is removed    
 - Changes are unstaged but still in files    
 
 4. Re-commit, then use `git reset --hard` to go back one commit — what happens this time?   
+
 ![practice](images/14.png)    
 ![practice](images/15.png)    
 
@@ -57,10 +60,12 @@
 
 ### Task 2: Git Revert — Hands-On
 1. Make 3 commits (commit X, Y, Z)   
+
 ![practice](images/21.png)    
 
 2. Revert commit Y (the middle one) — what happens?
 3. Check `git log` — is commit Y still in the history?   
+
 ![practice](images/22.png)
 
 - A new commit is created (Y’)
