@@ -150,3 +150,50 @@ git switch feature-settings
 git switch feature-signup
 git switch master
 ```
+
+### Day 24
+
+```
+git branch feature-login
+git branch feature-signup
+git cherry-pick bcfbb1d
+git log --oneline
+git log --oneline --graph
+git log --oneline --graph --all
+git merge --squash feature-profile
+git merge feature-login
+git merge feature-settings
+git merge feature-signup
+git rebase master
+git stash
+git stash apply stash@{0}
+git stash list
+git stash pop
+git stash push -m "Change 2"
+git stash push -m "work in progress"
+git status
+git switch -c feature-dashboard
+git switch -c feature-hotfix
+git switch -c feature-profile
+git switch -c feature-settings
+git switch feature login
+git switch feature-dashboard
+git switch feature-hotfix
+git switch feature-login
+git switch feature-settings
+git switch feature-signup
+git switch master
+
+```
+
+### Day 25
+
+```
+git log --oneline -5
+git reflog
+git reset --hard HEAD~1
+git reset --mixed HEAD~1
+git reset --soft HEAD~1
+git revert b26728e
+
+```
