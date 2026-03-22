@@ -62,7 +62,7 @@ Selected 6 repositories that best represent my skills:
 - Screenshot of GitHub profile before changes  
 ![img](images/before.png)  
 - Screenshot after improvements  
-![img](images/after.png)  
+![img](images/after.jpg)  
 
 
 ---
