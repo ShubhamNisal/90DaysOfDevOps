@@ -1,0 +1,91 @@
+docker build -t cmd-image:v1 .
+docker build -t entrypoint-image .
+docker build -t ep-image .
+docker build -t my-demo:v1 .
+docker build -t my-ubuntu:v1 .
+docker build -t my-website:v1 .
+docker build -t simple-java:v1
+docker build -t simple-java:v1 .
+docker container inspect c2
+docker container prune
+docker exec -it 58b4cf8fd6ee
+docker exec -it 58b4cf8fd6ee bash
+docker exec -it 5ce5634bb24d bash
+docker exec -it 869d86a5bdb2
+docker exec -it 869d86a5bdb2 bash
+docker exec -it 869d86a5bdb2 sh
+docker exec -it mydb mysql -u root -p pass
+docker exec -it mydb mysql -uroot -ppass
+docker exec -it mydb2 mysql -uroot -ppass
+docker exec c1 ping 172.17.0.5
+docker exec c1 ping c2
+docker exec c2 ping c1
+docker image
+docker image history simple-java:v1
+docker image prune
+docker images
+docker image prune
+docker logs 58b4cf8fd6ee
+docker network create app-net
+docker network create my-app-net
+docker network inspect bridge
+docker network ls
+docker ps
+docker ps -a
+docker rm $(docker ps -a)
+docker rm $(docker ps -aq)
+docker rm 4acabfe8bb3e
+docker rm 5598c484c09d
+docker rm 58b4cf8fd6ee
+docker rm 869d86a5bdb2
+docker rm app
+docker rm c1 c2
+docker rm cfa4fec2a0a7
+docker rm simple-java:v1
+docker rmi $(docker images -q)
+docker rmi $(docker images)
+docker rmi ep-image:latest
+docker rmi simple-java:v1
+docker run -d --name mydb --network app-net -e MYSQL_ROOT_PASSWORD=pass -v dbdata:/var/lib/mysql mysql
+docker run -d --name mydb -e MYSQL_ROOT_PASSWORD=pass -v mysqlvolume:/var/lib/mysql mysql
+docker run -d --name mydb -e MYSQL_ROOT_PASSWORD=pass mysql
+docker run -d --name mydb2 -e MYSQL_ROOT_PASSWORD=pass -v mysqlvolume:/var/lib/mysql mysql
+docker run -d --name myweb -p 8080:80 -v ~/site:/usr/share/nginx/html nginx
+docker run -d -p 8080:80 my-website:v1
+docker run -d my-ubuntu:v1
+docker run -d simple-java:v1
+docker run -dit --name c1 --network my-app-net alpine sh
+docker run -dit --name c1 alpine sh
+docker run -dit --name c2 --network my-app-net alpine sh
+docker run -dit --name c2 alpine sh
+docker run -it --name app --network app-net alpine sh
+docker run -it simple-java:v1
+docker run cmd-image:v1 free -h
+docker run cmd-image:v1 pwd
+docker run cmd-image:v1 whoami
+docker run entrypoint-image Hello
+docker run entrypoint-image echo "Hello"
+docker run entrypoint-image free -h
+docker run entrypoint-image ls
+docker run entrypoint-image ls -l
+docker run entrypoint-image pwd
+docker run my-demo:v1
+docker run my-ubuntu:v1
+docker run mysql
+docker run simple-java:v1
+docker stop $(docker ps -q)
+docker stop 4acabfe8bb3e
+docker stop 533aad6f9eea
+docker stop 5598c484c09d
+docker stop 869d86a5bdb2
+docker stop c1 c
+docker stop c1 c2
+docker stop c1 c2 & docker rm c1 c2
+docker stop mydb && docker rm mydb
+docker volume create dbdata
+docker volume create mysqlvolume
+docker volume inspect
+docker volume inspect mydb
+docker volume inspect mysqlvolume
+docker volume ls
+docler ps
