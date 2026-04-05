@@ -25,7 +25,8 @@ Yesterday I manually created networks and volumes and ran containers one by one.
 4. Access it in your browser
 5. Stop it with `docker compose down`
 
-![img](images/21.png)   
+![img](images/21.png) 
+![img](images/211.png)   
 ![img](images/22.png)   
 
 ---
