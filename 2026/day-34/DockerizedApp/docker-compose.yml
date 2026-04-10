@@ -1,0 +1,57 @@
+version: "3.9"
+
+services:
+  postgres_db:
+    image: postgres:15
+    restart: always
+    environment:
+      POSTGRES_USER: ${POSTGRES_USER}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
+      POSTGRES_DB: ${POSTGRES_DB}
+    ports:
+      - "5432:5432"
+    volumes:
+      - db_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ${POSTGRES_USER}"]
+      interval: 12s
+      timeout: 6s
+      retries: 4
+      start_period: 25s
+    networks:
+      - backend_net
+    labels:
+      layer: "data"
+
+  cache_engine:
+    image: redis:7-alpine
+    ports:
+      - "6379:6379"
+    networks:
+      - backend_net
+    labels:
+      layer: "memory"
+
+  web_service:
+    build:
+      context: ./app
+      dockerfile: Dockerfile
+    ports:
+      - "${APP_PORT}:3000"
+    networks:
+      - backend_net
+    environment:
+      DATABASE_URL: "postgres://${POSTGRES_USER}:${POSTGRES_PASSWORD}@postgres_db:5432/${POSTGRES_DB}"
+      REDIS_HOST: cache_engine
+    depends_on:
+      postgres_db:
+        condition: service_healthy
+    labels:
+      layer: "application"
+
+volumes:
+  db_data:
+
+networks:
+  backend_net:
+    driver: bridge
