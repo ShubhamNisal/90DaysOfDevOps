@@ -10,10 +10,10 @@ Multi-stage builds are how real teams ship small, secure images. Docker Hub is h
 ## Expected Output
 - A markdown file: `day-35-multistage-hub.md`
 - Dockerfiles demonstrating multi-stage builds
-	- Files:
-		[Single-Node](app/single-node/Dockerfile)   
-		[Multistage-Node](app/multistage-node/Dockerfile)
-		[Best-Practice-Node](app/bestpractice-node/Dockerfile)
+	- Files:    
+		[Single-Node](app/single-node/Dockerfile)     
+		[Multistage-Node](app/multistage-node/Dockerfile)      
+		[Best-Practice-Node](app/bestpractice-node/Dockerfile)     
     
 - An image pushed to your Docker Hub account
 	- https://hub.docker.com/repository/docker/shubhamnisal/optimized-node/general
